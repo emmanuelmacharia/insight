@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+
+/* MAIN LOGIN PAGE */
+.headings {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.logo-img h2 {
+    font-size: 1.65rem;
+}
+
+.login-form {
+    position: absolute;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* .user-input {
+    flex-direction: column;
+} */
+
+.login-form input {
+    border-bottom: 1px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+
+}
+
+.login-form button {
+    width: 100%;
+    margin: 3rem auto 0 auto;
+    background-color: red;
+    bottom: 0;
+}
+
+/* NAVIGATION PANE */
+
+.heading-style {
+    display: flex;
+    flex-direction: row;
+}
+
+.insight-logo {
+    height: 30px;
+    margin: 1rem;
+}
+
+.heading-style h2 {
+    margin-top: 0.65rem;
+}
+
+
+/* NOTFICATION PAGE */
+
+.navigation-panel {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #949494;
+    margin-top: -2rem;
+}
+
+.navigation-panel .notify-actions {
+    flex-direction: row;
+    border: none;
+    background-color: none;
+    width: 48.75vw;
+    margin: 0;
+    padding: 0;
+}
+
+.event {
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.event button {
+    width: 200px;
+    margin: 20px auto 0 auto;
+    background-color: red;
+
+}
+
+.notify-actions:focus {
+    color: red;
+    border-bottom: 1px solid red;
+    outline: none;
+}
+
+/* SETTINGS */
+.about {
+    padding: 2rem;
+}
+
+/* ADD CONTACTS */
+.add-contacts {
+    display: flex;
+
+}
+
+
+.form-fields fieldset div input {
+    flex-direction: row;
+    width: 49vw;
+}
+
+#phone {
+    width: 98vw;
+}
+
+#first-name,
+#last-name,
+#phone {
+    border-bottom-color: red;
+
+}
+
+.submit-button {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 250px;
+    margin: 2rem auto 0 20%;
+    height: 25px;
+}
+
+
+/* PROGRESS */
+
+.acknowledger {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-class {
+    width: 100%;
+}
+
+.check-class span,
+.check-class p {
+    padding: 0 0 0 10px;
+}
+
+.check-class span:first-child {
+    left: 0;
+    margin: 0;
+}
+
+.check-class span:nth-child(2) {
+    margin-left: 10vw;
+    margin-right: 0;
+}
+
+
+.check-class span:nth-child(3) {
+    margin-right: 15vw;
+}
+
+.acknowledger>.submit-button {
+    margin-bottom: 20px;
+}
+
+/* .check-class button:first-child {
+    right: 0;
+    margin-left: 50%;
+}
+
+.check-class button:last-child {
+    right: 0;
+    margin-left: 40vw;
+} */
+
+.contact-list {
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.edit-and-delete {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+}
+
+.edit-and-delete button {
+    margin: 2px;
+}
+
+
+/*  NAVIGATION */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
