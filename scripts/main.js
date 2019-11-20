@@ -45,7 +45,7 @@ if (Notification.permission === 'granted') {
         });
 };
 
-var newNotification = new Notification('Notification One', {
+var newNotification = new Notification('Notification Three', {
     body: 'This is the first Notification',
     badge: "./android-chrome-256x256.png",
     icon: "./android-chrome-256x256.png",
@@ -56,6 +56,31 @@ var newNotification = new Notification('Notification One', {
     silent: true,
     timestamp: Date.now()
 });
+
+var newNotification = new Notification('Notification Three', {
+    body: 'This is the second Notification',
+    badge: "./android-chrome-256x256.png",
+    icon: "./android-chrome-256x256.png",
+    renotify: true,
+    tag: 'pwa',
+    lang: 'en-US',
+    dir: 'ltr',
+    silent: true,
+    timestamp: Date.now()
+});
+
+var newNotification = new Notification('Notification Three', {
+    body: 'This is the third Notification',
+    badge: "./android-chrome-256x256.png",
+    icon: "./android-chrome-256x256.png",
+    renotify: true,
+    tag: 'pwa',
+    lang: 'en-US',
+    dir: 'ltr',
+    silent: true,
+    timestamp: Date.now()
+});
+
 
 
 function activeElements() {
