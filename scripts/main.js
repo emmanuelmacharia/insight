@@ -34,6 +34,30 @@ window.addEventListener('beforeinstallprompt', event => {
     };
 });
 
+window.addEventListener('appinstalled', event => {});
+
+if (Notification.permission === 'granted') {
+    console.log('true')
+} else if (Notification.permission !== 'denied') {
+    Notification.requestPermission()
+        .then(permit => {
+            if (pernit === 'granted') console.log('You can get notifications now')
+        });
+};
+
+var newNotification = new Notification('Notification One', {
+    body: 'This is the first Notification',
+    badge: "./android-chrome-256x256.png",
+    icon: "./android-chrome-256x256.png",
+    renotify: true,
+    tag: 'pwa',
+    lang: 'en-US',
+    dir: 'ltr',
+    silent: true,
+    timestamp: Date.now()
+});
+
+
 function activeElements() {
     activeButton.click();
     activeButton.focus();
