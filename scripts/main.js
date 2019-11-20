@@ -82,10 +82,10 @@ var newNotification = new Notification('Notification Three', {
 });
 
 
-
 function activeElements() {
     activeButton.click();
     activeButton.focus();
+    console.log('called')
 }
 
 let activebuttonclick = activeButton.addEventListener('click', () => {
