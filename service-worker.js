@@ -1,16 +1,14 @@
 const CACHE_NAME = 'v1';
 const CACHE_ASSETS = [
-    'index.html',
-    'acknowledgment.html',
-    'contacts.html',
-    'edit-user.html',
-    'home.html',
-    'index.html',
-    'notifications.html',
-    'settings.html',
-    'summary.html',
-    '/css/styles.css',
-    '/scripts/main.js'
+    '/{repository}/acknowledgment.html',
+    '/{repository}/contacts.html',
+    '/{repository}/edit-user.html',
+    '/{repository}/index.html',
+    '/{repository}/notifications.html',
+    '/{repository}/settings.html',
+    '/{repository}/summary.html',
+    '/{repository}/css/styles.css',
+    '/{repository}/scripts/main.js'
 ]
 
 self.addEventListener('install', event => {
