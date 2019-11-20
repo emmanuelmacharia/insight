@@ -1,12 +1,13 @@
 const CACHE_NAME = 'v1';
 const CACHE_ASSETS = [
-    './index.html',
-    './acknowledgment.html',
-    './contacts.html',
-    './edit-user.html',
-    './notifications.html',
-    './settings.html',
-    './summary.html',
+    './',
+    '/index.html',
+    '/acknowledgment.html',
+    '/contacts.html',
+    '/edit-user.html',
+    '/notifications.html',
+    '/settings.html',
+    '/summary.html',
     './css/styles.css',
     './scripts/main.js'
 ]
