@@ -5,7 +5,6 @@ const inactiveButton = document.getElementById('inactive-events');
 let installPrompt;
 
 if (navigator.serviceWorker) {
-    console.log('service worker is supported');
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('../service-worker.js')
             .then(reg => {
@@ -16,7 +15,6 @@ if (navigator.serviceWorker) {
                 console.log(`error: ${err}`)
             })
     });
-
 } else {
     alert('service worker not supported');
 }
