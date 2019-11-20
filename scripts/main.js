@@ -6,7 +6,7 @@ let installPrompt;
 
 if (navigator.serviceWorker) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/{repository}/service-worker.js',{scope: '/{repository}/'})
+        navigator.serviceWorker.register('../service-worker.js')
             .then(reg => {
                 console.log('service worker successfully installed')
             })
